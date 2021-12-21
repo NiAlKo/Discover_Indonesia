@@ -50,7 +50,7 @@ ol[class] {
   list-style: none;
 }
 
-/** Для лементов a, у которых есть класс, убираем подчеркивание*/
+/** Для элементов a, у которых есть класс, убираем подчеркивание*/
 a[class] {
   text-decoration: none;
   color: inherit;
@@ -67,7 +67,7 @@ img {
   display: block;
 }
 
-/** Наследуем шрифты и цвет для инпутов и кнопок, а так же для инпутов с placeholder*/
+/** Наследуем шрифты для инпутов и кнопок*/
 input,
 button,
 textarea,
@@ -145,7 +145,6 @@ select {
   width: 86px;
   height: 23px;
   margin: 0 0 0 6px;
-  /* ? mb I'll do a stretching layout */
 }
 
 .page-header__main-nav {
@@ -171,6 +170,7 @@ select {
 
 .page-header__title {
   padding: 0px 0 32px 0;
+  color: #ffc178;
 }
 
 .page-header__subtitle, .page-header__subtitle-bold {
@@ -182,6 +182,7 @@ select {
   width: 950px;
   font-weight: 400;
   font-size: 88px;
+  word-wrap: break-word;
 }
 
 .page-header__subtitle-bold {
@@ -240,7 +241,7 @@ select {
 }
 
 .main-nav__link:hover {
-  color: khaki;
+  color: #ffc178;
 }
 
 .form-search__btn, .form-search__input {
@@ -275,7 +276,7 @@ select {
 
 .form-search__input:focus {
   width: 150px;
-  border-bottom: 1px solid #f9f0da;
+  border-bottom: 1px solid #ffc178;
 }
 
 .title {
@@ -284,7 +285,6 @@ select {
   line-height: 25px;
   letter-spacing: 6px;
   text-transform: uppercase;
-  color: #ffc178;
 }
 
 .title::before {
