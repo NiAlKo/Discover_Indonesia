@@ -1,0 +1,140 @@
+// /*=================Settings=================!*/
+
+// /*=================All-Page=================!*/
+.visibility-hidden {
+  display: none;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+%title {
+  content: "";
+  display: inline-block;
+  width: 72px;
+  height: 2px;
+  vertical-align: middle;
+  margin: 0 32px 0 0;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  word-wrap: break-word;
+}
+.main-contant {
+  width: 1461px;
+  margin: 0 auto;
+}
+section[class] {
+  padding: 0 0 250px 0;
+}
+.link {
+  font-weight: 700;
+  color: $yellow;
+}
+%link {
+  content: "";
+  display: inline-block;
+  background: url(../img/icon/icon_arrow.svg);
+  width: 25px;
+  height: 16px;
+  vertical-align: middle;
+  margin: 0 0 0 9px;
+}
+// /*=================HEADER=================!*/
+.page-header {
+  &__row-btn,
+  &__main-nav,
+  &__row-content,
+  &__row-btn {
+    display: flex;
+  }
+
+  &__column-title,
+  &__container {
+    margin: 0 auto;
+  }
+}
+
+// /*=====================individual elements================*/
+.main-nav {
+  &__list {
+    display: flex;
+    flex: 0 0 auto;
+  }
+
+  &__item {
+    margin-right: 50px;
+    line-height: 25px;
+  }
+  // &__item:last-child {
+  //   margin-right: 0px;
+  // }
+
+  &__link:hover {
+    color: $light-orang;
+  }
+}
+
+.form-search {
+  &__btn,
+  &__input {
+    height: 25px;
+  }
+  &__label,
+  &__input,
+  &__btn {
+    border: none;
+    outline: none;
+  }
+
+  &__btn {
+    background: url(../img/icon/icon_loupe.svg) no-repeat bottom;
+    width: 25px;
+    margin: 0 17px 0 0;
+    cursor: pointer;
+  }
+
+  &__label,
+  &__input,
+  &__input::-webkit-input-placeholder {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    color: inherit;
+  }
+  &__input {
+    width: 0;
+    background: transparent;
+    transition: 0.5s;
+  }
+  &__input:focus {
+    width: 150px;
+    border-bottom: 1px solid $light-orang;
+  }
+}
+
+.social {
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__text {
+    writing-mode: vertical-lr;
+  }
+  &__item:not(&__item:last-child) {
+    margin: 0 0 25px 0;
+  }
+
+  // &__link {
+  // }
+
+  &__img {
+    margin: 0 0 0 7px;
+  }
+}

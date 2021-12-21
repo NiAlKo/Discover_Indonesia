@@ -1,0 +1,34 @@
+/*!=================ABOUT=================!*/
+.about {
+  display: flex;
+  &__img {
+    flex: 0 0 598px;
+    height: 720px;
+  }
+  &__content {
+    flex: 0 0 632px;
+    margin: 0 0 0 auto;
+  }
+
+  &__title {
+    color: $yellow;
+    padding: 0 0 27px 0;
+  }
+
+  &__title::before {
+    @extend %title;
+    background-color: $yellow;
+  }
+
+  &__subtitle {
+    max-width: 555px;
+    padding: 0 0 27px 0;
+  }
+
+  &__text {
+  }
+
+  &__link::after {
+    @extend %link;
+  }
+}
