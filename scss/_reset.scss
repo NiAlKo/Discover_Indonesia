@@ -1,17 +1,23 @@
-/*!=========RESET=========!*/
+/*!=================RESET=================!*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
+/** Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: #fff;
+  background-color: #000;
 }
 
-/* Убираем внешние отступы */
+/** Убираем внешние отступы */
 body,
 h1,
 h2,
@@ -29,32 +35,35 @@ dd {
   margin: 0;
 }
 
-/* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+/** Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+/** Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
   list-style: none;
 }
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+/** Для лементов a, у которых есть класс, убираем подчеркивание*/
+a[class] {
+  text-decoration: none;
+  color: inherit;
+}
+/** Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Упрощаем работу с изображениями */
+/** Упрощаем работу с изображениями */
 img {
   max-width: 100%;
   display: block;
 }
 
-/* Наследуем шрифты для инпутов и кнопок */
+/** Наследуем шрифты и цвет для инпутов и кнопок, а так же для инпутов с placeholder*/
 input,
 button,
 textarea,
