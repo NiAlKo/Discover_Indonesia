@@ -11,13 +11,11 @@
   }
 
   &__title {
-    color: $yellow;
     padding: 0 0 27px 0;
   }
 
   &__title::before {
     @extend %title;
-    background-color: $yellow;
   }
 
   &__subtitle {
@@ -26,6 +24,7 @@
   }
 
   &__text {
+    padding: 0 0 27px 0;
   }
 
   &__link::after {

@@ -54,6 +54,7 @@
 
   &__title::before {
     @extend %title;
+    margin: 0 32px 0 0;
     background-color: $light-orang;
   }
 

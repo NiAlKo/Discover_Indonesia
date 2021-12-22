@@ -1,1 +1,33 @@
 /*!=================SLIDER=================!*/
+.slider {
+  &__slide {
+    position: relative;
+  }
+  &__navigation-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  &__btn-r,
+  &__btn-l {
+    width: 30px;
+    height: 30px;
+    border: none;
+  }
+
+  &__btn-l {
+    margin: 0 41px 0 0;
+    background: url(../img/icon/chevron_big_left.svg) no-repeat center / cover;
+  }
+
+  &__btn-r {
+    margin: 0 0 0 31px;
+    background: url(../img/icon/chevron_big_right.svg) no-repeat left / cover;
+  }
+}

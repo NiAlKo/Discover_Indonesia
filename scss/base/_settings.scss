@@ -11,6 +11,7 @@
   line-height: 25px;
   letter-spacing: 6px;
   text-transform: uppercase;
+  color: $yellow;
 }
 %title {
   content: "";
@@ -18,7 +19,8 @@
   width: 72px;
   height: 2px;
   vertical-align: middle;
-  margin: 0 32px 0 0;
+  margin: 0 24px 0 0;
+  background-color: $yellow;
 }
 .subtitle {
   font-weight: 700;
@@ -136,5 +138,59 @@ section[class] {
 
   &__img {
     margin: 0 0 0 7px;
+  }
+}
+// /*=================SLIDER=================!*/
+.slide {
+  &__viewport {
+    position: relative;
+  }
+
+  &__img {
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 79.603%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__title {
+    padding: 0 0 24px 0;
+  }
+  &__link {
+    padding: 0 0 42px 0;
+  }
+  &__link::after {
+    @extend %link;
+  }
+  &__title::before {
+    margin: 0 29px 0 0;
+    @extend %title;
+  }
+  &__title::after {
+    margin: 0 0 0 29px;
+    @extend %title;
+  }
+  &__text,
+  &__subtitile {
+    text-align: center;
+  }
+  &__subtitile {
+    // max-width: 705px;
+    padding: 0 0 27px 0;
+  }
+
+  &__text {
+    max-width: 80.309%;
+    padding: 0 0 39px 0;
   }
 }
