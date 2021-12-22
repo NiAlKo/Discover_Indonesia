@@ -1,1 +1,23 @@
 /*!=================CULTURE=================!*/
+.culture {
+  display: flex;
+  margin: -23px 0 0 0;
+  &__content {
+    flex: 0 0 43.19%;
+    margin: 0 auto 0 42px;
+    align-self: center;
+  }
+
+  &__title,
+  &__subtitle,
+  &__text {
+    padding: 0 0 27px 0;
+  }
+
+  &__link::after {
+    @extend %link;
+  }
+  &__img {
+    flex: 0 0 39.54%;
+  }
+}
