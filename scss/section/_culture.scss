@@ -13,7 +13,9 @@
   &__text {
     padding: 0 0 27px 0;
   }
-
+  &__title::before {
+    @extend %title;
+  }
   &__link::after {
     @extend %link;
   }

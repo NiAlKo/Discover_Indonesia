@@ -28,7 +28,8 @@
   line-height: 87px;
   word-wrap: break-word;
 }
-.main-contant {
+.main-contant,
+.footer-page__wrapper {
   width: 1461px;
   margin: 0 auto;
 }
@@ -38,6 +39,12 @@ section[class] {
 .link {
   font-weight: 700;
   color: $yellow;
+}
+.link:hover {
+  opacity: 0.5;
+}
+.link:active {
+  opacity: 0.2;
 }
 %link {
   content: "";
@@ -81,6 +88,10 @@ section[class] {
   &__link:hover {
     color: $light-orang;
   }
+
+  &__link:active {
+    color: $light-white;
+  }
 }
 
 .form-search {
@@ -103,13 +114,16 @@ section[class] {
   }
 
   &__label,
-  &__input,
-  &__input::-webkit-input-placeholder {
+  &__input {
     font-size: 17px;
     font-weight: 400;
     line-height: 23px;
     color: inherit;
   }
+  &__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
   &__input {
     width: 0;
     background: transparent;
@@ -117,29 +131,10 @@ section[class] {
   }
   &__input:focus {
     width: 150px;
-    border-bottom: 1px solid $light-orang;
+    border-bottom: 1px solid $light-white;
   }
 }
 
-.social {
-  &__list {
-    display: flex;
-    flex-direction: column;
-  }
-  &__text {
-    writing-mode: vertical-lr;
-  }
-  &__item:not(&__item:last-child) {
-    margin: 0 0 25px 0;
-  }
-
-  // &__link {
-  // }
-
-  &__img {
-    margin: 0 0 0 7px;
-  }
-}
 // /*=================SLIDER=================!*/
 .slide {
   &__viewport {
@@ -161,6 +156,7 @@ section[class] {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 4;
   }
 
   &__title {

@@ -12,13 +12,14 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 1;
   }
   &__btn-r,
   &__btn-l {
     width: 30px;
     height: 30px;
     border: none;
+    cursor: pointer;
   }
 
   &__btn-l {
@@ -28,6 +29,6 @@
 
   &__btn-r {
     margin: 0 0 0 31px;
-    background: url(../img/icon/chevron_big_right.svg) no-repeat left / cover;
+    background: url(../img/icon/chevron_big_right.svg) no-repeat center / cover;
   }
 }

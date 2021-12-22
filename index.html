@@ -13,7 +13,7 @@
 			<div class="page-header__bg"></div>
 			<div class="page-header__container">
 			<nav class="page-header__main-nav main-nav">	
-				<img src="./img/icon/logo.svg" alt="Logo QWERy" class="page-header__logo" width="86" height="23" />
+				<img src="./img/icon/logo.svg" alt="QWERy" class="page-header__logo" width="86" height="23" />
 					<ul class="main-nav__list">
 						<li class="main-nav__item"><a class="main-nav__link" href="#">Information</a></li>
 						<li class="main-nav__item"><a class="main-nav__link" href="#">About us</a></li>
@@ -30,23 +30,29 @@
 			<div class="page-header__row-content">
 				<div class="page-header__column-social social">
 					<ul class="social__list">
-						<li class="social__item">
-								<p class="social__text">Follow us</p>
-							</li>
 					<li class="social__item">
 						<a class="social__link" href="#">
-							<img class="social__img" src="./img/icon/icon_fb.svg" alt="Facebook" width="11" height="22">
+							<div class="social__img">
+								<img src="./img/icon/icon_fb.svg" alt="Facebook" width="11" height="22">
+							</div>	
 						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link" href="#" >
-							<img class="social__img" src="./img/icon/icon_inm.svg" alt="Instagram" width="21" height="17">
+						<a class="social__link" href="#">
+						<div class="social__img">
+							<img src="./img/icon/icon_inm.svg" alt="Instagram" width="21" height="17"> 
+						</div>
 						</a>
 					</li>
 						<li class="social__item">
 						<a class="social__link" href="#" >
-							<img  class="social__img" src="./img/icon/icon_twr.svg" alt="Twitter" width="20" height="20">
+						<div class="social__img">
+							<img src="./img/icon/icon_twr.svg" alt="Twitter" width="20" height="20">
+						</div>
 						</a>
+					</li>
+					<li class="social__item">
+						<p class="social__text">Follow us</p>
 					</li>
 				</ul>
 			</div>
@@ -96,7 +102,6 @@
 			</section>
 
 			<section class="culture">
-				<div class="culture__wrapper"></div>
 				<div class="culture__content">
 					<h2 class="culture__title title">INDONESIAN CULTURE</h2>
 					<p class="culture__subtitle subtitle">Our culture here is very friendly to people</p>
@@ -109,11 +114,77 @@
 			
 			</section>
 
-
 		</main>
 
-		<footer class="footer-page">
-
+		<footer class="footer-page" id="footer-page">
+			<div class="footer-page__wrapper">	
+			<div class="footer-page__header">
+				<img class="footer-page__header-logo" src="./img/icon/logo.svg" alt="QWERy">
+				<p class="footer-page__header-text">Ready to explore?</p>
+				<a href="#" class="footer-page__header-link">Get started</a>
+			</div>
+			<div class="footer-page__body">
+				<div class="footer-page__body-form--container">
+						<p class="footer-page__body-form--title">Let's go on vacation, Make your day</p>
+				<form class="footer-page__body-form" action="#">
+					<input type="mail" class="footer-page__body-form--input" id="email" placeholder="Email address">
+					<button class="footer-page__body-form--btn" type="submit"></button>
+				</form>
+			</div>
+				<div class="footer-page__nav-footer nav-footer">
+					<ul class="nav-footer__list">
+						<li class="nav-footer__item">
+							<h3 class="nav-footer__title">Services</h3>
+							<a class="nav-footer__link" href="#">Email Marketing</a>
+							<a class="nav-footer__link" href="#">Campaigns</a>
+							<a class="nav-footer__link" href="#">Branding</a>
+							<a class="nav-footer__link" href="#">Offline</a>
+						</li>
+						<li class="nav-footer__item">
+							<h3 class="nav-footer__title">About</h3>
+							<a class="nav-footer__link" href="#">Our Story</a>
+							<a class="nav-footer__link" href="#">Benefits</a>
+							<a class="nav-footer__link" href="#">Team</a>
+							<a class="nav-footer__link" href="#">Careers</a>
+						</li>
+						<li class="nav-footer__item">
+							<h3 class="nav-footer__title">Help</h3>
+							<a class="nav-footer__link" href="#">FAQs</a>
+							<a class="nav-footer__link" href="#">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-page__footer">
+				<a class="footer-page__footer-link" href="#">Terms & Conditions</a>
+				<a class="footer-page__footer-link" href="#">Privacy Policy</a>
+				<div class="footer-page__social">
+					<ul class="footer-page__social-list">
+						<li class="footer-page__social-item">
+							<a class="footer-page__social-link" href="#">
+								<div class="footer-page__social-img-fb">
+									<img src="./img/icon/icon_fb.svg" alt="Facebook" width="11" height="22">
+								</div>	
+							</a>
+						</li>
+						<li class="footer-page__social-item">
+							<a class="footer-page__social-link" href="#">
+							<div class="footer-page__social-img-inm">
+								<img src="./img/icon/icon_inm.svg" alt="Instagram" width="21" height="17"> 
+							</div>
+							</a>
+						</li>
+							<li class="footer-page__social-item">
+							<a class="footer-page__social-link" href="#" >
+							<div class="footer-page__social-img-twr">
+								<img src="./img/icon/icon_twr.svg" alt="Twitter" width="20" height="20">
+							</div>
+							</a>
+						</li>
+				</ul>
+				</div>
+			</div>
+		</div>
 		</footer>
 	</body>
 </html>
