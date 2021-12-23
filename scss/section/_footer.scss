@@ -2,12 +2,13 @@
 
 .footer-page {
   &__header {
+    white-space: nowrap;
     display: flex;
   }
 
   &__header-logo {
     width: 173px;
-    padding: 12px 0 49px 4px;
+    padding: 12px 50px 49px 4px;
   }
 
   &__header-link {
@@ -38,7 +39,10 @@
     padding: 55px 0 0 0;
   }
   &__body-form--container {
-    max-width: 400px;
+    // max-width: 400px;
+    flex: 0 0 26.666%;
+    // margin: 0 52px 0 0;
+    word-wrap: break-word;
   }
   &__body-form {
     display: inline-block;
@@ -98,12 +102,15 @@
   }
 
   &__nav-footer {
-    margin: 0 0 0 auto;
+    // border: slateblue solid;
+    flex: 0 0 47.466%;
+    margin: 0 97px 0 auto;
   }
 
   &__footer {
-    max-width: 94.25%;
-    margin: 101px 0 162px 0;
+    max-width: 91.933%;
+    padding: 101px 0 162px 0;
+    margin: 0 auto;
     display: flex;
   }
 
@@ -132,7 +139,7 @@
     display: flex;
   }
 
-  &__social-item {
+  &__social-item:not(&__social-item:last-child) {
     margin: 0 51px 0 0;
   }
 
@@ -155,15 +162,17 @@
 .nav-footer {
   &__list {
     display: flex;
+    justify-content: space-between;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    margin: 0 185px 0 auto;
+    white-space: nowrap;
+    align-content: space-between;
   }
-  &__item:last-child {
-    margin: 0 97px 0 0;
+  &__item:not(&__item:last-child) {
+    margin: 0 25px 0 0;
   }
 
   &__title,

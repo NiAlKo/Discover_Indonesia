@@ -20,7 +20,8 @@
   }
 
   &__container {
-    width: 1920px;
+    min-width: 970px;
+    max-width: 1920px;
     padding: 58px 84px 0 79px;
     // margin: 0 auto;
   }
@@ -28,7 +29,7 @@
   &__logo {
     width: 86px;
     height: 23px;
-    margin: 0 0 0 6px;
+    margin: 0 50px 0 6px;
   }
 
   &__main-nav {
@@ -40,10 +41,15 @@
   &__form-search {
     margin: -2px 0 0 0;
   }
-
+  &__column-title {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
   &__title {
     padding: 0px 0 32px 0;
     color: $light-orang;
+    // align-self: flex-start;
   }
 
   &__title::before {
@@ -58,7 +64,7 @@
     line-height: 100px;
   }
   &__subtitle {
-    width: 950px;
+    // width: 950px;
     font-size: 88px;
   }
 
@@ -74,7 +80,7 @@
   }
 
   &__column-social {
-    padding: 47px 0 0 0;
+    padding: 47px 20px 0 0;
   }
 
   .social {
@@ -101,12 +107,11 @@
       padding: 0 0 0 6px;
     }
   }
-  // &__column-title {
-  // }
 
   &__row-btn {
     // display: flex;
-    justify-content: center;
+    align-self: center;
+    // margin: 30.582% 0 0 0;
     margin: 126px 0 0 0;
   }
   &__btn-down {
@@ -134,9 +139,18 @@
     transform: rotate(90deg);
   }
   &__btn-down:hover::after {
-    filter: invert(100%);
+    filter: opacity(0.5);
   }
   &__btn-down:active::after {
-    filter: opacity(0.3);
+    filter: opacity(0.2);
+  }
+  @media (max-width: 1200px) {
+    &__title,
+    &__subtitle {
+      text-align: center;
+    }
+    &__row-btn {
+      margin: 40px 0 0 0;
+    }
   }
 }
